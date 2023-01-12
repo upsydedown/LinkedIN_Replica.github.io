@@ -1,0 +1,40 @@
+.header {
+    position: sticky;
+    /* background-color: grey; */
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding: 0.15rem 0rem 0.15rem 0rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+}
+
+.logo-image {
+    object-fit: contain;
+    height: 40px;
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.header-search {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 5px;
+    height: 22px;
+    background-color: #eef3f8;
+}
+
+.header-search > input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.header-right{
+    gap: 0.5rem;
+}
