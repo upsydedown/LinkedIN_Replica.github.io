@@ -55,12 +55,13 @@
 .sidebar-stat {
     display: flex;
     justify-content: space-between;
-    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+    padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
 }
 
 .sidebar-stat:hover{
-    background-color: white;
-    border-radius: 2px;
+    background-color: whitesmoke;
+    border-radius: 30px;
     cursor: pointer;
 }
 

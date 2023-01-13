@@ -23,6 +23,4 @@
 }
 .header_option_avatar{
     object-fit: contain;
-    height: 1.5rem !important;
-    color: black;
 }
