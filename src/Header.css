@@ -1,6 +1,6 @@
 .header {
     position: sticky;
-    /* background-color: grey; */
+    background-color: white;
     justify-content: space-evenly;
     border-bottom: 0.1px solid lightgray;
     padding: 0.15rem 0rem 0.15rem 0rem;

@@ -1,14 +1,14 @@
-.sidebar{
+.sidebar {
     position: sticky;
     top: 80px;
     flex: 0.2;
-    margin: 0rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.5rem 0.25rem 0.5rem 0.5rem;
     border-radius: 5px;
     text-align: center;
     height: fit-content;
 }
 
-.sidebar_header_section{
+.sidebar_header_section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,33 +21,90 @@
     padding: 0rem 0rem 0.5rem 0rem;
     overflow: hidden;
 }
-.sidebar_avatar{
+
+.sidebar_avatar {
     margin: 0rem 0rem 0.5rem 0rem;
 }
 
-.sidebar_header_section >img{
+.sidebar_header_section>img {
     object-fit: cover;
     width: 100%;
     margin: 0rem 0rem -1.25rem 0rem;
 }
 
-.sidebar-statistics{
-    margin: 0.5rem 0rem 0rem 0rem;
-    gap: 0.25rem;
+.sidebar_header_section>h2 {
+    font-size: 1.3rem;
+    margin: 0rem 0rem 0.05rem 0rem;
 }
 
-.sidebar-stat{
+.sidebar_header_section>h4 {
+    color: gray;
+    font-size: 0.9rem;
+    font-weight: 625;
+}
+
+.sidebar-statistics {
+    padding: 0.5rem 0rem 0rem 0rem;
+    gap: 0.25rem;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidebar-stat {
     display: flex;
     justify-content: space-between;
     margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-.sidebar-statistics > p{
+
+.sidebar-stat:hover{
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.sidebar-stat >p {
     color: gray;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
 }
 
-.sidebar-stat-number{
-    color: #0a66c2;
-    font-weight: bold;
+.sidebar-stat-number {
+    color: #0a66c2 !important;
+    font-weight: bold!important;
+}
+
+.sidebar-bottom {
+    margin: 0.5rem 0rem 0rem 0rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    text-align: left;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sidebar-bottom >p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0rem 0rem 0.25rem 0rem;
+}
+
+.sidebar_recentItems {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding: 0.25rem 0.5rem 0rem 0.5rem;
+    color: gray;
+}
+
+.hash {
+    margin: 0rem 0.15rem 0rem 0.15rem;
+}
+
+.sidebar_recentItems:hover {
+    background-color: whitesmoke;
+    border-radius: 2px;
+    cursor: pointer;
+    color: black;
 }
