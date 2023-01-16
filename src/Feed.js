@@ -8,12 +8,14 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import VerticalSplitIcon from '@mui/icons-material/VerticalSplit';
 import Post from "./Post.js";
 import { db } from './firebase';
+import firebase from 'firebase';
 
 const Feed = () => {
+    const [input, setInput] = useState("second")
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        db.collection("posts").onSnapshot(snapshot => (
+        db.collection("posts").orderBy("timestamp","desc").onSnapshot(snapshot => (
             setPosts(snapshot.docs.map(doc => (
                 {
                     id: doc.id,
@@ -26,8 +28,15 @@ const Feed = () => {
 
     const sendPost = (e) => {
         e.preventDefault();
-        
 
+        db.collection("posts").add({
+            name: "Upsyde",
+            description: "The test",
+            message: input,
+            photoUrl: "",
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        })
+        setInput("");
     };
 
 
@@ -39,7 +48,7 @@ const Feed = () => {
                     <div className="feed_input">
                         <CreateIcon />
                         <form className='input_section' action="">
-                            <input type="text" />
+                            <input value={input} onChange={e => setInput(e.target.value)} type="text" />
                             <button onClick={sendPost} className="post" type='submit'>Post</button>
                         </form>
                     </div>
@@ -52,11 +61,15 @@ const Feed = () => {
                 </div>
 
                 {/* ===Post-section=== */}
-                {posts.map((post) => (
-                    <Post />
+                {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
+                    <Post
+                        key={id}
+                        name={name}
+                        description={description}
+                        message={message}
+                        photoUrl={photoUrl}
+                    />
                 ))}
-                <Post name="Chintan" description="test" message="sucks" />
-
             </div>
         </>
     )
