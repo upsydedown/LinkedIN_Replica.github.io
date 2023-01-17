@@ -1,2 +1,5 @@
-.LoginForm{
+.Login{
+    display: grid;
+    place-items: center;
+    /* background-color: white; */
 }

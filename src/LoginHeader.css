@@ -14,12 +14,12 @@
 
 .logo-image {
     object-fit: contain;
-    height: 42.5px;
+    height: 30px;
     margin: 0rem 0.5rem 0rem 0.5rem;
 }
 
 .LoginHeader-right{
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .buttons{
@@ -55,5 +55,7 @@
 }
 
 .sign_in_btn:hover{
-    border: 0.1px solid black;
+    color: #0855a1!important;
+    border: 0.1px solid #0855a1 !important;
+    background-color: whitesmoke;
 }

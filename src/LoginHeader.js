@@ -19,8 +19,8 @@ const LoginHeader = () => {
                     <Header_Options Icon={BusinessCenterIcon} title="Jobs"/>
 
                     <div className="buttons container">
-                        <input className='btn join_now_btn' type="button" value="Join now" />
-                        <input className='btn sign_in_btn' type="button" value="Sign In" />
+                        <input className='btn join_now_btn' type="submit" value="Join now" />
+                        <input className='btn sign_in_btn' type="Submit" value="Sign In" />
                     </div>
                     </div>
             </div>
