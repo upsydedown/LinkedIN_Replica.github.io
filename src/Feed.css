@@ -29,9 +29,11 @@
     font-weight: 600;
     flex: 1;
 }
+
 .post {
     display: none;
 }
+
 .feed_input_options{
     display: flex;
     justify-content: space-evenly;

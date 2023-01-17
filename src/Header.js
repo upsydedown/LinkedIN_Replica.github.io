@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import "./Header.css"
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
@@ -15,7 +15,6 @@ const Header = () => {
             <div className="header container">
                 <div className="header-left container">
                     <img className='logo-image' src="images/logo1.png" alt="logo-image" srcset="" />
-
                     <div className="header-search container">
                         <SearchIcon />
                         <input type="text" name="" id="" />

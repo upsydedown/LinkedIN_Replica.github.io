@@ -1,0 +1,59 @@
+.LoginHeader {
+    position: sticky;
+    background-color: white;
+    justify-content: space-evenly;
+    padding: 0.5rem 0rem 0.75rem 0rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    object-fit: contain;
+    height: 42.5px;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.LoginHeader-right{
+    gap: 2.5rem;
+}
+
+.buttons{
+    gap: 0.75rem;
+}
+
+.btn{
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    transition: all 0.05s ease-out;
+}
+
+.btn:hover{
+    color: black;
+    cursor: pointer;
+
+}
+
+.join_now_btn{
+    color: rgb(119, 119, 119);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.sign_in_btn{
+    color:#0a66c2;
+    padding: 0.95rem 1.5rem 0.95rem 1.5rem;
+    border: 0.1px solid #0a66c2;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.05s ease-out;
+}
+
+.sign_in_btn:hover{
+    border: 0.1px solid black;
+}
