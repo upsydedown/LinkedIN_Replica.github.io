@@ -8,8 +8,18 @@ import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Header_Options from './Header_Option';
+import { useDispatch } from 'react-redux';
+import { auth } from './firebase';
+import { logout } from './features/userSlice';
 
 const Header = () => {
+
+    const dispatch = useDispatch();
+    const logoutOfApp = () =>{
+            dispatch(logout());
+            auth.signOut();
+    }
+
     return (
         <>
             <div className="header container">
@@ -27,7 +37,7 @@ const Header = () => {
                     <Header_Options Icon={ChatIcon} title="Messaging"/>
                     <Header_Options Icon={NotificationsIcon} title="Notification"/>
                     {/* Add Avatar  */}
-                    <Header_Options Icon= {AccountCircleIcon} title= "Me"/> 
+                    <Header_Options avatar={true} title= "Me" onClick={logoutOfApp}/> 
 
 
                 </div>

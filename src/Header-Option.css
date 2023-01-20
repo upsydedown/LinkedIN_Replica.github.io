@@ -23,4 +23,5 @@
 }
 .header_option_avatar{
     object-fit: contain;
+    text-transform: capitalize;
 }

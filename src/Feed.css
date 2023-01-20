@@ -16,6 +16,11 @@
     border-radius: 30px;
     padding: 0.75rem 0.75rem 0.75rem 1rem;
     color: gray;
+    transition: all 0.15s ease-in-out;
+}
+
+.feed_input:hover {
+    border: 1px solid gray;
 }
 
 .input_section {
@@ -26,7 +31,8 @@
 .input_section > input {
     border: none;
     outline-width: 0;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 400;
     flex: 1;
 }
 

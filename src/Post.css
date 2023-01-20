@@ -17,7 +17,6 @@
 
 .Post_info>h2 {
     font-size: 1rem;
-
 }
 
 .Post_info>p {
@@ -27,10 +26,13 @@
 
 .Post_body {
     overflow-wrap: anywhere;
+    margin: 0rem 0.75rem 0rem 0.75rem;
+    border-bottom: 1px solid lightgrey;
 }
 .Post_body > p{
-    margin: 0rem 0.75rem 0rem 0.75rem;
-
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: 0.95rem;
+    font-weight: 600;
 }
 .Post_buttons{
     display: flex;

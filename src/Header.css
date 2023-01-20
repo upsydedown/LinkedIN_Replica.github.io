@@ -1,7 +1,8 @@
 .header {
     position: sticky;
+    top: 0px;
     background-color: white;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     border-bottom: 0.1px solid lightgray;
     padding: 0.15rem 0rem 0.15rem 0rem;
     width: 100%;
@@ -22,8 +23,14 @@
 .header-search {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 5px;
-    height: 22px;
+    height: 0.9rem;
+    width: 15rem;
     background-color: #eef3f8;
+    transition: all 0.15s ease-in-out;
+}
+
+.header-search:hover {
+    border: 1px solid grey;
 }
 
 .header-search > input {

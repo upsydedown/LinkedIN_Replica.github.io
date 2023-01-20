@@ -1,6 +1,6 @@
 .sidebar {
     position: sticky;
-    top: 80px;
+    top: 70px;
     flex: 0.2;
     margin: 0.5rem 0.25rem 0.5rem 0.5rem;
     border-radius: 5px;
@@ -33,13 +33,13 @@
 }
 
 .sidebar_header_section>h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0rem 0rem 0.05rem 0rem;
 }
 
 .sidebar_header_section>h4 {
     color: gray;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 625;
 }
 
@@ -67,7 +67,7 @@
 
 .sidebar-stat >p {
     color: gray;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
@@ -86,8 +86,8 @@
 }
 
 .sidebar-bottom >p{
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 600;
     padding: 0rem 0rem 0.25rem 0rem;
 }
 
